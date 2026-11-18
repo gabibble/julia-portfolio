@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-cream: #faf6ef;
@@ -14,5 +14,11 @@
 }
 
 body {
-  @apply bg-cream text-ink font-sans;
+  @apply bg-cream font-sans text-ink;
+}
+
+@layer base {
+  nav a {
+    @apply inline-block transition hover:scale-105 hover:text-coral;
+  }
 }
