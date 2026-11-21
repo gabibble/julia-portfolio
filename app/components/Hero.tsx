@@ -1,8 +1,11 @@
 export default function Hero() {
   return (
-    <section className="p-6">
-      <div className='font-script'>julia</div>
-      <div className='font-sans'>giebultowicz</div>
+    <section className='mx-auto max-w-6xl px-6 pt-7'>
+      <div className='rounded-3xl border border-ink bg-linear-135 from-coral via-teal to-aqua text-cream p-10'>
+        <div className='font-script text-5xl'>julia</div>
+        <div className='font-sans text'>giebultowicz</div>
+      </div>
+
     </section>
   );
 }
