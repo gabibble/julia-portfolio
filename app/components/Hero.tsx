@@ -12,10 +12,12 @@ export default function Hero() {
             </span>
           </h1>
           <div>
-            <p className='mb-2 max-w-[60%] text-[20px]/[23px]'>
-              Software engineer with an eye for design.
+            <p className='mb-3 text-2xl/7 font-normal'>
+              Software engineer with an 
+              <br />
+              eye for design.
             </p>
-            <p className='flex justify-between text-[26px]'>
+            <p className='flex items-center justify-between text-lg tracking-wide'>
               <span>Portland, OR</span>
               <span>G L E</span>
             </p>
