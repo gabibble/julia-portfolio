@@ -30,7 +30,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       lang='en'
       className={`${poppins.variable} ${retroScript.variable} ${retroSans.variable} h-full antialiased`}
     >
-      <body className='flex min-h-full flex-col'>{children}</body>
+      <body className='min-h-full'>{children}</body>
     </html>
   );
 }
