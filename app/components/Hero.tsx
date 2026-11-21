@@ -2,7 +2,7 @@ export default function Hero() {
   const buttonClass = 'border border-ink rounded-2xl p-6 flex-1 text-xl';
 
   return (
-    <div className='mx-auto my-8 grid w-full max-w-6xl grid-cols-[4fr_3fr] gap-3'>
+    <div className='mx-auto my-8 grid w-full max-w-6xl grid-cols-1 md:grid-cols-[4fr_3fr] gap-3'>
       <section className='flex aspect-[1160/743] flex-col justify-between bg-[url(/images/riso-card-bg.webp)] bg-contain bg-center bg-no-repeat p-12 pt-7 text-cream'>
         <h1 className='mx-auto flex flex-col pt-6 font-script'>
           <span className='block text-9xl'>julia</span>
