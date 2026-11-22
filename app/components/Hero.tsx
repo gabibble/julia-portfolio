@@ -1,5 +1,14 @@
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaLocationDot,
+  FaArrowRightLong,
+} from 'react-icons/fa6';
+
 export default function Hero() {
-  const buttonClass = 'border border-ink rounded-2xl p-6 text-xl';
+  const buttonClass =
+    'flex items-center gap-3 border border-ink rounded-2xl p-6 text-xl';
 
   return (
     <div className='mx-auto my-8 grid w-full max-w-6xl grid-cols-1 gap-3 md:grid-cols-[4fr_3fr]'>
@@ -15,17 +24,40 @@ export default function Hero() {
             eye for design.
           </p>
           <p className='flex items-center justify-between text-lg tracking-wide'>
-            <span>Portland, OR</span>
-            <span>G L E</span>
+            <span className='flex items-center gap-2'>
+              <FaLocationDot className='-ml-1 size-6' />
+              Portland, OR
+            </span>
+            <span className='flex gap-3'>
+              <a
+                href='https://github.com/gabibble'
+                aria-label='GitHub'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaGithub className='size-6 transition hover:scale-110' />
+              </a>
+              <a
+                href='https://www.linkedin.com/in/julia-giebultowicz/'
+                aria-label='LinkedIn'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaLinkedin className='size-6 transition hover:scale-110' />
+              </a>
+              <a href='mailto:juliagieb@gmail.com' aria-label='Email'>
+                <FaEnvelope className='size-6 transition hover:scale-110' />
+              </a>
+            </span>
           </p>
         </div>
       </section>
       <section className='grid grid-cols-2 gap-3'>
         <a href='#about' className={buttonClass}>
-          about →
+          about <FaArrowRightLong className='size-6' />
         </a>
         <a href='#contact' className={`${buttonClass} bg-ink text-cream`}>
-          get in touch →
+          get in touch <FaArrowRightLong className='size-6' />
         </a>
       </section>
       <div className='relative col-start-2 row-span-2 row-start-1 hidden overflow-hidden rounded-3xl border md:block'>
