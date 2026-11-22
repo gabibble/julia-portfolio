@@ -14,18 +14,20 @@ export default function Hero() {
     <div className='mx-auto my-8 grid w-full max-w-6xl grid-cols-1 gap-3 md:grid-cols-[4fr_3fr]'>
       <section className='flex aspect-[1160/743] flex-col justify-between bg-[url(/images/riso-card-bg.webp)] bg-contain bg-center bg-no-repeat p-12 pt-7 text-cream'>
         <h1 className='mx-auto flex flex-col pt-6 font-script'>
-          <span className='block text-9xl'>julia</span>
-          <span className='-mt-2 ml-[1.3em] block text-6xl'>giebultowicz</span>
+          <span className='block text-8xl lg:text-9xl'>julia</span>
+          <span className='-mt-2 ml-[1.3em] block text-5xl lg:text-6xl'>
+            giebultowicz
+          </span>
         </h1>
         <div>
-          <p className='mb-3 text-2xl/7 font-normal'>
+          <p className='mb-3 text-lg/5 font-normal lg:text-2xl/7'>
             Software engineer with an
             <br />
             eye for design.
           </p>
-          <p className='flex items-center justify-between text-lg tracking-wide'>
+          <p className='text-md flex items-center justify-between tracking-wide lg:text-lg'>
             <span className='flex items-center gap-2'>
-              <FaLocationDot className='-ml-1 size-6' />
+              <FaLocationDot className='-ml-1 size-5 lg:size-6' />
               Portland, OR
             </span>
             <span className='flex gap-3'>
@@ -35,7 +37,7 @@ export default function Hero() {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <FaGithub className='size-6 transition hover:scale-110' />
+                <FaGithub className='size-5 transition hover:scale-110 lg:size-6' />
               </a>
               <a
                 href='https://www.linkedin.com/in/julia-giebultowicz/'
@@ -43,10 +45,10 @@ export default function Hero() {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <FaLinkedin className='size-6 transition hover:scale-110' />
+                <FaLinkedin className='size-5 transition hover:scale-110 lg:size-6' />
               </a>
               <a href='mailto:juliagieb@gmail.com' aria-label='Email'>
-                <FaEnvelope className='size-6 transition hover:scale-110' />
+                <FaEnvelope className='size-5 transition hover:scale-110 lg:size-6' />
               </a>
             </span>
           </p>
