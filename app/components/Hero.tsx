@@ -8,7 +8,7 @@ import {
 
 export default function Hero() {
   const buttonClass =
-    'flex items-center gap-2 whitespace-nowrap border border-ink rounded-2xl p-4 text-base sm:gap-3 sm:text-lg lg:p-6 lg:text-xl';
+    'flex items-center gap-2 whitespace-nowrap border border-ink rounded-2xl p-4 text-base sm:gap-3 sm:text-lg lg:p-6 lg:text-xl lift';
 
   return (
     <div className='mx-auto my-8 grid w-full max-w-[calc(72rem+3rem)] grid-cols-1 gap-3 px-6 md:grid-cols-[4fr_3fr]'>
