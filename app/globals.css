@@ -33,7 +33,7 @@ body {
   &:hover,
   &:focus-visible {
     translate: -3px -3px;
-    box-shadow: 4px 4px 0 var(--color-riso-coral);
+    box-shadow: 6px 6px 0 var(--color-coral);
   }
 
   @media (prefers-reduced-motion: reduce) {
