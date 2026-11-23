@@ -11,7 +11,7 @@ export default function Hero() {
     'flex items-center gap-2 whitespace-nowrap border border-ink rounded-2xl p-4 text-base sm:gap-3 sm:text-lg lg:p-6 lg:text-xl lift';
 
   return (
-    <div className='mx-auto my-8 grid w-full max-w-[calc(72rem+3rem)] grid-cols-1 gap-3 px-6 md:grid-cols-[4fr_3fr]'>
+    <div className='mx-auto my-16 grid w-full max-w-[calc(72rem+3rem)] grid-cols-1 gap-3 px-6 md:grid-cols-[4fr_3fr]'>
       <section className='@container aspect-[5/4] bg-[url(/images/riso-card-bg.webp)] bg-size-[100%_100%] bg-center bg-no-repeat text-cream sm:aspect-[1160/743]'>
         <div className='flex h-full flex-col justify-between p-[7cqw] pt-[4cqw]'>
           <h1 className='mx-auto flex flex-col pt-[3cqw] font-script'>
