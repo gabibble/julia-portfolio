@@ -7,6 +7,7 @@ export type Project = {
   href: string;
   image: string;
   imageAlt: string;
+  imageFit?: 'cover' | 'contain'; // optional, defaults to cover (fill + crop)
   size: 'wide' | 'tall' | 'half' | 'small' | 'featured';
   featured: boolean;
 };
@@ -22,6 +23,7 @@ export const projects: Project[] = [
     href: 'https://www.befunky.com/',
     image: '/images/projects/befunky-devices-collage.webp',
     imageAlt: "BeFunky's Collage Maker open on a phone and a laptop",
+    imageFit: 'contain',
     size: 'wide',
     featured: true,
   },
@@ -29,7 +31,7 @@ export const projects: Project[] = [
     title: 'GallerySnap',
     blurb:
       'Crops and straightens askew photos of artwork in one click. Designed by me and vibe coded with Claude.',
-    role: 'Idea, design + build',
+    role: 'Personal Project · Designed and Built',
     stack: 'Next.js, OpenCV.js',
     linkLabel: 'case study',
     href: 'https://www.gallerysnap.app/',
@@ -42,7 +44,7 @@ export const projects: Project[] = [
     title: 'Steve Barry Writes',
     blurb:
       'A portfolio site for a freelance medical writer. I designed it in Figma and built it in React, using Prismic CMS so he can update it himself.',
-    role: 'Client site · design + build',
+    role: 'Client site · Designed and Built',
     stack: 'React, Prismic',
     linkLabel: 'live site',
     href: 'https://stevebarrywrites.com',
@@ -56,7 +58,7 @@ export const projects: Project[] = [
     title: 'TripUp',
     blurb:
       'Fullstack trip planning app. Plan a trip and get a cost estimate and weather charts, pulled from travel and climate APIs.',
-    role: 'Full stack',
+    role: 'Personal Project · Designed and Built',
     stack: 'React, TypeScript, Flask, PostgreSQL',
     linkLabel: 'live site',
     href: 'https://trip-up-cc461.web.app/',
@@ -70,8 +72,8 @@ export const projects: Project[] = [
     title: 'Gradient Generator',
     blurb:
       'Build a linear, radial or conic gradient, then copy the CSS or download a PNG. My design, vibe coded with Claude.',
-    role: 'Design + build',
-    stack: 'Vanilla JavaScript',
+    role: 'Personal Project · Designed and Built',
+    stack: 'JavaScript, HTML, CSS',
     linkLabel: 'live site',
     href: 'https://generate-gradient-app.vercel.app/',
     image: '/images/projects/gradient.webp',
@@ -83,8 +85,8 @@ export const projects: Project[] = [
   {
     title: 'Polka Prints',
     blurb: 'The website for my greeting card shop, designed and built by me.',
-    role: 'Design + build',
-    stack: 'HTML, CSS, Bootstrap',
+    role: 'Artist Website · Designed and Built',
+    stack: 'JavaScript, HTML, CSS',
     linkLabel: 'live site',
     href: 'https://www.polkaprints.com/',
     image: '/images/projects/polka.webp',
@@ -95,7 +97,7 @@ export const projects: Project[] = [
   {
     title: 'Weather App',
     blurb: 'Current weather and a 6-day forecast.',
-    role: 'Design + build',
+    role: 'Personal Project · Designed and Built',
     stack: 'React',
     linkLabel: 'live site',
     href: 'https://juliaweatherapp.netlify.app/',
@@ -106,9 +108,9 @@ export const projects: Project[] = [
   },
   {
     title: 'Eso Bee',
-    blurb: '(add blurb) Musician website',
+    blurb: 'Musician website',
     role: 'Design + build',
-    stack: '(add stack)',
+    stack: 'JavaScript, HTML, CSS',
     linkLabel: 'live site',
     href: 'https://esobee.netlify.app/',
     image: '/images/projects/esobee.webp',
@@ -118,9 +120,9 @@ export const projects: Project[] = [
   },
   {
     title: 'Francis Theater',
-    blurb: '(add blurb) Mock theater website',
+    blurb: 'Mock theater website',
     role: 'Design + build',
-    stack: '(add stack)',
+    stack: 'JavaScript, HTML, CSS',
     linkLabel: 'live site',
     href: 'https://francis-theater-mockup.netlify.app/',
     image: '/images/projects/francis.webp',
