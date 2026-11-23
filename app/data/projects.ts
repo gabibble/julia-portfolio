@@ -49,7 +49,7 @@ export const projects: Project[] = [
     image: '/images/projects/steve-barry.webp',
     imageAlt:
       'Steve Barry Writes homepage with his bio, credentials and client logos',
-    size: 'small',
+    size: 'half',
     featured: true,
   },
   {
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     image: '/images/projects/tripapp.webp',
     imageAlt:
       'TripUp trip page for Chicago showing estimated cost and May weather',
-    size: 'wide',
+    size: 'half',
     featured: true,
   },
   {
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     image: '/images/projects/gradient.webp',
     imageAlt:
       'Gradient Generator with a blue-to-purple gradient and color stops',
-    size: 'half',
+    size: 'small',
     featured: true,
   },
   {
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     href: 'https://www.polkaprints.com/',
     image: '/images/projects/polka.webp',
     imageAlt: 'Polka Prints site with a linocut print and greeting cards',
-    size: 'half',
+    size: 'small',
     featured: true,
   },
   {
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     image: '/images/projects/francis.webp',
     imageAlt: 'Francis Theater mock website',
     size: 'small',
-    featured: false,
+    featured: true,
   },
 ];
 
