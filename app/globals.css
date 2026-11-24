@@ -47,3 +47,8 @@ body {
     scroll-behavior: smooth;
   }
 }
+
+/* Leave a little room above a section when a link scrolls to it. */
+section[id] {
+  scroll-margin-top: 1.5rem;
+}
