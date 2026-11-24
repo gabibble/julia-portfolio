@@ -22,7 +22,7 @@ export default function Contact() {
   return (
     <section
       id='contact'
-      className='mx-auto mt-16 w-full max-w-[calc(72rem+3rem)] px-6 pb-24'
+      className='mx-auto mt-24 w-full max-w-[calc(72rem+3rem)] px-6 pb-24 md:mt-32'
     >
       <div className='flex flex-col gap-8 rounded-[20px] bg-teal px-8 py-12 text-cream md:flex-row md:items-center md:justify-between md:px-16 md:py-20'>
         <h2 className='flex flex-col self-center font-script text-6xl leading-none md:self-auto md:text-8xl'>
