@@ -31,9 +31,9 @@ export const projects: Project[] = [
   {
     title: 'GallerySnap',
     blurb:
-      'Crops and straightens askew photos of artwork in one click. Designed by me and vibe coded with Claude.',
+      'Automatically crops and corrects the perspective of photographed artwork. Independently designed and developed using AI-assisted engineering and computer vision.',
     role: 'Personal Project · Designed and Built',
-    stack: 'Next.js, OpenCV.js',
+    stack: 'Next.js, OpenCV.js, Claude Code',
     linkLabel: 'live site',
     href: 'https://www.gallerysnap.app/',
     image: '/images/projects/gallerysnap.webp',
@@ -73,7 +73,7 @@ export const projects: Project[] = [
   {
     title: 'Gradient Generator',
     blurb:
-      'Build a linear, radial or conic gradient, then copy the CSS or download a PNG. My design, vibe coded with Claude.',
+      'An interactive design tool for creating, customizing and exporting CSS gradients. Designed and built using an AI-assisted development workflow.',
     role: 'Personal Project · Designed and Built',
     stack: 'JavaScript, HTML, CSS',
     linkLabel: 'live site',

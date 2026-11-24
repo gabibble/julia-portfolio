@@ -62,7 +62,7 @@ export default function About() {
   return (
     <section
       id='about'
-      className='mx-auto my-24 w-full max-w-[calc(72rem+3rem)] px-6 md:my-32'
+      className='mx-auto my-16 w-full max-w-[calc(72rem+3rem)] px-6 md:my-32'
     >
       <div className='grid grid-cols-1 gap-10 md:grid-cols-[4fr_3fr] md:items-center'>
         <div>
@@ -79,7 +79,7 @@ export default function About() {
             idea through release.
           </p>
         </div>
-        <div className='relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-full'>
+        <div className='relative mx-auto aspect-square w-full max-w-64 overflow-hidden rounded-full sm:max-w-sm'>
           <img
             className='absolute inset-0 h-full w-full object-cover'
             src='/images/julia-riso.webp'

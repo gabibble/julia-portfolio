@@ -22,9 +22,9 @@ export default function Contact() {
   return (
     <section
       id='contact'
-      className='mx-auto mt-24 w-full max-w-[calc(72rem+3rem)] px-6 pb-24 md:mt-32'
+      className='mx-auto mt-16 w-full max-w-[calc(72rem+3rem)] px-6 pb-16 md:mt-32'
     >
-      <div className='flex flex-col gap-8 rounded-[20px] bg-teal px-8 py-12 text-cream md:flex-row md:items-center md:justify-between md:px-16 md:py-20'>
+      <div className='flex flex-col gap-8 rounded-[20px] bg-teal px-6 py-12 text-cream sm:px-8 md:flex-row md:items-center md:justify-between md:px-16 md:py-20'>
         <h2 className='flex flex-col self-center font-script text-6xl leading-none md:self-auto md:text-8xl'>
           <span>get in</span>
           <span className='ml-[1.3em]'>touch</span>
@@ -38,7 +38,7 @@ export default function Contact() {
                 rel={
                   href.startsWith('http') ? 'noopener noreferrer' : undefined
                 }
-                className='flex items-center gap-3 text-lg break-all underline-offset-4 hover:underline'
+                className='flex items-center gap-3 text-base [overflow-wrap:anywhere] underline-offset-4 hover:underline sm:text-lg'
               >
                 <Icon className='size-6 shrink-0' />
                 {label}
