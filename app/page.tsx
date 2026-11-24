@@ -1,6 +1,7 @@
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
+import About from './components/About';
 import Contact from './components/Contact';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Projects />
+      <About />
       <Contact />
     </>
   );

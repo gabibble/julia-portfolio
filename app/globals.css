@@ -48,7 +48,7 @@ body {
   }
 }
 
-/* Leave a little room above a section when a link scrolls to it. */
+/* Stop sections below the sticky nav (about 5rem tall) when a link scrolls to them. */
 section[id] {
-  scroll-margin-top: 1.5rem;
+  scroll-margin-top: 7rem;
 }
