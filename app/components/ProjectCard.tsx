@@ -9,17 +9,8 @@ const colSpans: Record<Project['size'], string> = {
   featured: 'md:col-span-6',
 };
 
-// Fixed image shape per card size, so same-size cards get same-size photos.
-// Tall cards have no fixed shape on desktop: the photo fills the row height.
-const imageShapes: Record<Project['size'], string> = {
-  wide: 'aspect-[16/9]',
-  half: 'aspect-[16/10]',
-  tall: 'aspect-[4/3] md:aspect-auto md:flex-1',
-  small: 'aspect-[4/3]',
-  featured: 'aspect-[16/7]',
-};
-
 export default function ProjectCard({ project }: { project: Project }) {
+  const isTall = project.size === 'tall';
   const Arrow =
     project.linkLabel === 'live site' ? FiArrowUpRight : FiArrowRight;
 
@@ -28,14 +19,22 @@ export default function ProjectCard({ project }: { project: Project }) {
       href={project.href}
       className={`col-span-6 ${colSpans[project.size]} flex lift flex-col rounded-[20px] border-[1.5px] border-ink p-4 md:p-5`}
     >
+      {/* Photos show whole, at their own shape. Only the tall card fills
+          the row height (cropping its bottom), so the row stays balanced. */}
       <div
-        className={`relative overflow-hidden rounded-xl ${project.imageFit === 'contain' ? '' : 'border border-ink/15'} ${imageShapes[project.size]}`}
+        className={`overflow-hidden rounded-xl ${project.imageFit === 'contain' ? '' : 'border border-ink/15'} ${isTall ? 'md:relative md:flex-1' : ''}`}
       >
-        <img
-          src={project.image}
-          alt={project.imageAlt}
-          className={`absolute inset-0 h-full w-full ${project.imageFit === 'contain' ? 'object-contain' : 'object-cover object-top'}`}
-        />
+        {/* picture lets phones get a different image (mobileImage) than desktop */}
+        <picture>
+          {project.mobileImage && (
+            <source media='(min-width: 768px)' srcSet={project.image} />
+          )}
+          <img
+            src={project.mobileImage ?? project.image}
+            alt={project.imageAlt}
+            className={`block h-auto w-full ${isTall ? 'md:absolute md:inset-0 md:h-full md:object-cover md:object-top' : ''}`}
+          />
+        </picture>
       </div>
       <div className='px-1 pt-5'>
         <div className='flex items-baseline justify-between gap-4'>

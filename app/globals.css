@@ -40,3 +40,10 @@ body {
     transition: none;
   }
 }
+
+/* Smooth scroll for in-page links like #work (off for reduced motion). */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

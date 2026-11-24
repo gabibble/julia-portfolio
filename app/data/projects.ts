@@ -7,6 +7,7 @@ export type Project = {
   href: string;
   image: string;
   imageAlt: string;
+  mobileImage?: string; // optional image for phones (below md)
   imageFit?: 'cover' | 'contain'; // optional, defaults to cover (fill + crop)
   size: 'wide' | 'tall' | 'half' | 'small' | 'featured';
   featured: boolean;
@@ -36,6 +37,7 @@ export const projects: Project[] = [
     linkLabel: 'case study',
     href: 'https://www.gallerysnap.app/',
     image: '/images/projects/gallerysnap.webp',
+    mobileImage: '/images/projects/gallerysnap-wide.webp',
     imageAlt: 'GallerySnap app straightening a photo of a painting',
     size: 'tall',
     featured: true,
@@ -64,7 +66,7 @@ export const projects: Project[] = [
     href: 'https://trip-up-cc461.web.app/',
     image: '/images/projects/tripapp.webp',
     imageAlt:
-      'TripUp trip page for Chicago showing estimated cost and May weather',
+      'TripUp trip page for Seattle showing estimated cost and weather charts',
     size: 'half',
     featured: true,
   },
