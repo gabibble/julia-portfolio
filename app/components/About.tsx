@@ -74,9 +74,16 @@ export default function About() {
           </h2>
           <p className='mt-8 max-w-prose text-lg'>
             Frontend software engineer with four years of experience shipping
-            features in a photo editing web app used by millions. I do my best
-            work on collaborative teams, partnering with product and design from
-            idea through release.
+            features in a photo editing web app used by millions. I love
+            building intuitive, beautiful interfaces and obsess over user
+            experience. A passion for clean, functional code, my intuition for
+            product and UX, and an eye for design make me a cross-functional
+            addition to any team.
+          </p>
+          <p className='mt-4 max-w-prose text-lg'>
+            Before coding, I was a teacher. That experience helped shape my love
+            of collaboration, my leadership abilities and my tolerance for
+            high-stress situations.
           </p>
         </div>
         <div className='relative mx-auto aspect-square w-full max-w-64 overflow-hidden rounded-full sm:max-w-sm'>
