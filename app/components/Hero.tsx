@@ -3,14 +3,12 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaLocationDot,
-  FaArrowRightLong,
-  FaArrowDownLong,
 } from 'react-icons/fa6';
-import { FiArrowUpRight } from 'react-icons/fi';
+import { FiArrowDown, FiArrowUpRight } from 'react-icons/fi';
 
 export default function Hero() {
   const buttonClass =
-    'flex items-center gap-2 whitespace-nowrap border border-ink rounded-2xl p-4 text-base sm:gap-3 sm:text-lg lg:p-6 lg:text-xl lift';
+    'flex items-center justify-between gap-2 whitespace-nowrap font-medium border border-ink rounded-2xl p-4 text-base sm:gap-3 sm:text-lg lg:p-6 lg:text-xl lift';
 
   return (
     <div className='mx-auto mt-8 mb-10 grid w-full max-w-[calc(72rem+3rem)] grid-cols-1 gap-3 px-6 md:mt-24 md:mb-16 md:grid-cols-[4fr_3fr]'>
@@ -60,7 +58,7 @@ export default function Hero() {
       </section>
       <section className='grid grid-cols-2 gap-3'>
         <a href='#about' className={buttonClass}>
-          about me <FaArrowDownLong className='size-5' />
+          about me <FiArrowDown className='size-7' strokeWidth={2.5} />
         </a>
         <a
           href='/julia-giebultowicz-resume.pdf'
@@ -71,7 +69,7 @@ export default function Hero() {
           résumé <FiArrowUpRight className='size-7' strokeWidth={2.5} />
         </a>
       </section>
-      <div className='relative col-start-2 row-span-2 row-start-1 hidden overflow-hidden rounded-3xl border md:block'>
+      <div className='relative col-start-2 row-span-2 row-start-1 hidden overflow-hidden rounded-3xl md:block'>
         <img
           className='absolute inset-0 h-full w-full object-cover'
           src='/images/julia-riso.webp'

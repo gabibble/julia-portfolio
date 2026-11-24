@@ -35,7 +35,7 @@ body {
     box-shadow: 6px 6px 0 var(--color-coral);
   }
 
-  @media (hover: hover) {
+  @media (hover: hover) and (min-width: 48rem) {
     &:hover {
       translate: -3px -3px;
       box-shadow: 6px 6px 0 var(--color-coral);
