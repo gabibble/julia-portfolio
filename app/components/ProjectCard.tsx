@@ -19,12 +19,9 @@ export default function ProjectCard({ project }: { project: Project }) {
       href={project.href}
       className={`col-span-6 ${colSpans[project.size]} flex lift flex-col rounded-[20px] border-[1.5px] border-ink p-4 md:p-5`}
     >
-      {/* Photos show whole, at their own shape. Only the tall card fills
-          the row height (cropping its bottom), so the row stays balanced. */}
       <div
         className={`overflow-hidden rounded-xl ${project.imageFit === 'contain' ? '' : 'border border-ink/15'} ${isTall ? 'md:relative md:flex-1' : ''}`}
       >
-        {/* picture lets phones get a different image (mobileImage) than desktop */}
         <picture>
           {project.mobileImage && (
             <source media='(min-width: 768px)' srcSet={project.image} />

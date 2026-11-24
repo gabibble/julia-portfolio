@@ -7,8 +7,8 @@ export type Project = {
   href: string;
   image: string;
   imageAlt: string;
-  mobileImage?: string; // optional image for phones (below md)
-  imageFit?: 'cover' | 'contain'; // optional, defaults to cover (fill + crop)
+  mobileImage?: string;
+  imageFit?: 'cover' | 'contain';
   size: 'wide' | 'tall' | 'half' | 'small' | 'featured';
   featured: boolean;
 };

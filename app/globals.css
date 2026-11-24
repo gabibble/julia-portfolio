@@ -3,6 +3,7 @@
 @theme {
   --color-cream: #faf6ef;
   --color-ink: #23566f;
+  --color-ink-dark: #1b3f52;
   --color-teal: #2f6d8c;
   --color-aqua: #7cc8c0;
   --color-sky: #a9c9d8;
@@ -23,8 +24,7 @@ body {
     @apply inline-block transition hover:scale-105 hover:text-coral;
   }
 }
-/* Lift hover: card pops up-left with a hard coral shadow.
-   Used on hero buttons and project cards. */
+
 @utility lift {
   transition:
     translate 120ms ease-out,
@@ -41,14 +41,12 @@ body {
   }
 }
 
-/* Smooth scroll for in-page links like #work (off for reduced motion). */
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
   }
 }
 
-/* Stop sections below the sticky nav (about 5rem tall) when a link scrolls to them. */
 section[id] {
   scroll-margin-top: 7rem;
 }
