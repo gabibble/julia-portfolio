@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <a
       href={project.href}
-      className={`col-span-6 ${colSpans[project.size]} flex lift flex-col rounded-[20px] border-[1.5px] border-ink p-4 md:p-5`}
+      className={`col-span-6 ${colSpans[project.size]} ${project.hideOnMobile ? 'hidden md:flex' : 'flex'} lift flex-col md:rounded-[20px] md:border-[1.5px] md:border-ink md:p-5`}
     >
       <div
         className={`overflow-hidden rounded-xl ${project.imageFit === 'contain' ? '' : 'border border-ink/15'} ${isTall ? 'md:relative md:flex-1' : ''}`}
@@ -33,7 +33,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           />
         </picture>
       </div>
-      <div className='px-1 pt-5'>
+      <div className='pt-3 md:px-1 md:pt-5'>
         <div className='flex items-baseline justify-between gap-4'>
           <h3 className='text-xl font-medium'>{project.title}</h3>
           <span className='flex shrink-0 items-center gap-1 text-sm text-ink/70'>
@@ -42,7 +42,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           </span>
         </div>
         <p className='mt-2 text-ink/80'>{project.blurb}</p>
-        <p className='mt-3 text-sm text-ink/70'>
+        <p className='mt-3 hidden text-sm text-ink/70 md:block'>
           <span className='font-medium text-ink'>{project.role}</span>
           {project.stack && ` · ${project.stack}`}
         </p>

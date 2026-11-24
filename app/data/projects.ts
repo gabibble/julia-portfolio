@@ -11,6 +11,7 @@ export type Project = {
   imageFit?: 'cover' | 'contain';
   size: 'wide' | 'tall' | 'half' | 'small' | 'featured';
   featured: boolean;
+  hideOnMobile?: boolean;
 };
 
 export const projects: Project[] = [
@@ -131,6 +132,7 @@ export const projects: Project[] = [
     imageAlt: 'Francis Theater mock website',
     size: 'small',
     featured: true,
+    hideOnMobile: true,
   },
 ];
 

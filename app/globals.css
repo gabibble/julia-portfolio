@@ -30,10 +30,16 @@ body {
     translate 120ms ease-out,
     box-shadow 120ms ease-out;
 
-  &:hover,
   &:focus-visible {
     translate: -3px -3px;
     box-shadow: 6px 6px 0 var(--color-coral);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      translate: -3px -3px;
+      box-shadow: 6px 6px 0 var(--color-coral);
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
